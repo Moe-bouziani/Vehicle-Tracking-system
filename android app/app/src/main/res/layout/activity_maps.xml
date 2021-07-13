@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="675dp"
+        tools:context=".MapsActivity" />
+
+    <RelativeLayout
+        android:id="@+id/validity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white">
+
+        <EditText
+            android:id="@+id/ID"
+            android:layout_width="177dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="34dp"
+            android:layout_marginEnd="37dp"
+            android:inputType="text"
+            android:text="Enter your ID." />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="138dp"
+            android:layout_height="42dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="8dp"
+            android:text="Find my path"
+            android:onClick="gethttp"
+            />
+
+    </RelativeLayout>
+
+
+</FrameLayout>
+

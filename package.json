@@ -1,0 +1,27 @@
+{
+  "name": "mapserver",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "this a map server ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "data",
+    "map",
+    "location"
+  ],
+  "author": "EL HLAFI Mohamed",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nedb": "^1.8.0"
+  },
+  "engines":{
+    "node":"12.13.0"
+  }
+}
